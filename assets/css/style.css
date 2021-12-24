@@ -1,0 +1,49 @@
+:root {}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#hero {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background-image: url("../images/toroid.png");
+    background-size: contain;
+    background-position-x: center;
+   }
+
+#hero * {
+    border: 1px solid rgba(137, 43, 226, 0.164);
+    justify-content: ;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex: 1 1 auto;
+   justify-content: center;
+}
+
+main img {
+    max-height: inherit;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex: 0 1 40px;
+} 
+
+
+/* main {
+    background-image: url("../images/toroid.png");
+} */
