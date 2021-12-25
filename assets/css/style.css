@@ -2,7 +2,7 @@
     --ww: 0;
     font-size: 24px;
     
-    color: ivory;
+    color: rgb(138, 138, 118);
 }
 
 #fff:hover + #eee {
@@ -15,6 +15,15 @@
     transition: filter 2s;
 }
 
+h1[data-gong]:hover::after {
+    content: attr(data-gong);
+    border-bottom: 2px;
+    border-color: maroon;
+    background-color: mediumslateblue;
+    margin-bottom: 23px;
+    color: navy;
+}
+
 html,
 body {
     height: 100%;
@@ -22,15 +31,38 @@ body {
     
 }    
 
+                        /* H E A D E R */
+
+header {
+    display: flex;
+    flex: 0 1 auto;
+    min-height: 8%;
+    justify-content: space-between;
+}
+
+                        /* NAV BAR */
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+header li {
+   display: flex;
+   justify-content: space-around;
+}
+
+                        /* H E R O */
+
 #hero {
     display: flex;
     flex-flow: column;
     height: 100%;
-    background-image: url("../images/stars.jpg");
+    /* background-image: url("../images/stars.jpg"); */
     background-size: cover;
     background-position: center center;
 }
-
 
 
 #hero * {
@@ -39,12 +71,7 @@ body {
     align-items: center;
 }
 
-header {
-    display: flex;
-    flex: 0 1 auto;
-    min-height: 8%;
-    justify-content: center;
-}
+                        /* MAIN */
 
 main {
  display: flex;
@@ -54,34 +81,34 @@ main {
 
 main section {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     flex: 1 1 auto;
 }
+
+#fff {
+    background-color: rgba(240, 128, 128, 0.308);
+}
+
+#eee {
+  background-color: rgba(37, 190, 241, 0.384);
+}
+
 
 main section div {
     display: flex;
     justify-content: space-around;
     flex: 1 1 auto;
-    backdrop-filter: blur(1.5px);
-    padding: 1%;
-    margin: 0.7%;
+    backdrop-filter: blur(0px);
+    background-color: rgba(128, 0, 0, 0.315);
+    height: 40px;
+    margin: 2px;
+    max-width: 200px;
+    min-width: 200px;
 }
 
-#fff {
-        background-color: rgba(240, 128, 128, 0.308);
-}
 
-#eee {
-      background-color: rgba(37, 190, 241, 0.384);
-}
-
-div {
-    display: flex;
-    
-    
-    min-width: 18%;
-    min-height: 18%;
-}
+                        /* FOOTER */
 
 footer {
     display: flex;
