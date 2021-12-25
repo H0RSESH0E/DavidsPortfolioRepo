@@ -1,19 +1,37 @@
-:root {}
+:root {
+    --ww: 0;
+    font-size: 24px;
+    
+    color: ivory;
+}
+
+#fff:hover + #eee {
+    filter: blur(1000px);
+    transition: filter 2s;
+}
+
+#eee:hover ~ #fff {
+    filter: blur(1000px);
+    transition: filter 2s;
+}
 
 html,
 body {
     height: 100%;
     margin: 0;
-}
+    
+}    
 
 #hero {
     display: flex;
     flex-flow: column;
     height: 100%;
-    background-image: url("../images/toroid.png");
-    background-size: contain;
-    background-position-x: center;
-   }
+    background-image: url("../images/stars.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+
 
 #hero * {
     border: 1px solid rgba(137, 43, 226, 0.164);
@@ -24,17 +42,45 @@ body {
 header {
     display: flex;
     flex: 0 1 auto;
+    min-height: 8%;
     justify-content: center;
 }
 
 main {
-    display: flex;
-    flex: 1 1 auto;
-   justify-content: center;
+ display: flex;
+ flex: 1 1 auto;
+    background-color: rgba(32, 178, 171, 0.178);
 }
 
-main img {
-    max-height: inherit;
+main section {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 auto;
+}
+
+main section div {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 auto;
+    backdrop-filter: blur(1.5px);
+    padding: 1%;
+    margin: 0.7%;
+}
+
+#fff {
+        background-color: rgba(240, 128, 128, 0.308);
+}
+
+#eee {
+      background-color: rgba(37, 190, 241, 0.384);
+}
+
+div {
+    display: flex;
+    
+    
+    min-width: 18%;
+    min-height: 18%;
 }
 
 footer {
@@ -47,3 +93,4 @@ footer {
 /* main {
     background-image: url("../images/toroid.png");
 } */
+
