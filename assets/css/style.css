@@ -1,7 +1,18 @@
 :root {
-    --ww: 0;
-    font-size: 24px;
-    
+    --primary-bg-color: blue;
+    --primary-border-colour: lightblue;
+    --primary-font-color: green;
+    --primary-headline-font: Helvetica;
+    --primary-font-size: 24px;
+
+
+    --secondary-bg-color: pink;
+    --secondary-border-color: red;
+    --secondary-font-color: yellow;
+    --secondary-headline-font: Arial;
+    --secondary-font-size: 16px;
+
+    font-size: 30px;
     color: rgb(138, 138, 118);
 }
 
@@ -26,34 +37,41 @@ h1[data-gong]:hover::after {
 
 html,
 body {
-    height: 100%;
+    height: 97%;
     margin: 0;
     
 }    
 
-                        /* H E A D E R */
+                                        /* H E A D E R */
 
 header {
-    display: flex;
-    flex: 0 1 auto;
-    min-height: 8%;
-    justify-content: space-between;
+    display: inline-flex;
+    flex: 1 1 auto;
+    min-width: 750px;
+    justify-content: space-around;
 }
 
-                        /* NAV BAR */
+header h1 {
+    display: flex;
+    flex: 3 1 70%;
+    font-size: 2rem;
+}
+                                        /* NAV BAR */
 header ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    flex: 1 1 30%;
+    
 }
 
 header li {
    display: flex;
-   justify-content: space-around;
+   font-size: 1rem;
+  
 }
 
-                        /* H E R O */
+                                        /* H E R O */
 
 #hero {
     display: flex;
@@ -71,19 +89,20 @@ header li {
     align-items: center;
 }
 
-                        /* MAIN */
+                                        /* MAIN */
 
 main {
  display: flex;
  flex: 1 1 auto;
     background-color: rgba(32, 178, 171, 0.178);
+    justify-content: space-around;
 }
 
 main section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    flex: 1 1 auto;
+    justify-content: space-around;
+
 }
 
 #fff {
@@ -101,14 +120,14 @@ main section div {
     flex: 1 1 auto;
     backdrop-filter: blur(0px);
     background-color: rgba(128, 0, 0, 0.315);
-    height: 40px;
+    height: 240px;
     margin: 2px;
-    max-width: 200px;
-    min-width: 200px;
+    min-width: 240px;
+    max-width: 240px;
 }
 
 
-                        /* FOOTER */
+                                       /* FOOTER */
 
 footer {
     display: flex;
