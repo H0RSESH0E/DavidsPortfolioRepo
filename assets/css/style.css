@@ -73,7 +73,14 @@ main img {
 footer {
     height: 25%;
     background-color: rgba(189, 13, 189, 0.452);
-}                                        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 200px;
+}
 
 
 
