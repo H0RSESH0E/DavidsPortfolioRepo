@@ -3,7 +3,7 @@
     --primary-border-colour: lightblue;
     --primary-font-color: green;
     --primary-headline-font: Helvetica;
-    --primary-font-size: 24px;
+    --primary-font-size: 64px;
 
 
     --secondary-bg-color: pink;
@@ -12,19 +12,27 @@
     --secondary-headline-font: Arial;
     --secondary-font-size: 16px;
 
+    font-family: avenir;
     font-size: 30px;
     color: rgb(138, 138, 118);
 }
 
-#fff:hover + #eee {
+
+/* @font-face {
+    font-family: 'cache';
+    src:  url('./Cache-Regular.ttf') format('truetype');
+  } */
+
+@font-face {
+    font-family: 'avenir';
+    src: url('./AvenirLTStd-Roman.otf');
+}
+
+#id2:hover ~ #id1 {
     filter: blur(1000px);
     transition: filter 2s;
 }
 
-#eee:hover ~ #fff {
-    filter: blur(1000px);
-    transition: filter 2s;
-}
 
 h1[data-gong]:hover::after {
     content: attr(data-gong);
@@ -37,38 +45,28 @@ h1[data-gong]:hover::after {
 
 html,
 body {
-    height: 97%;
+    height: 100%;
     margin: 0;
     
 }    
 
+
+
+
                                         /* H E A D E R */
 
 header {
-    display: inline-flex;
-    flex: 1 1 auto;
+    display: flex;
+    flex: 0 1 auto;
     min-width: 750px;
     justify-content: space-around;
+    background-color: rgba(0, 255, 115, 0.384);
 }
 
 header h1 {
     display: flex;
-    flex: 3 1 70%;
-    font-size: 2rem;
-}
-                                        /* NAV BAR */
-header ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    flex: 1 1 30%;
-    
-}
-
-header li {
-   display: flex;
-   font-size: 1rem;
-  
+    flex: 1;
+    font-size: var(--primary-font-size);
 }
 
                                         /* H E R O */
@@ -77,9 +75,10 @@ header li {
     display: flex;
     flex-flow: column;
     height: 100%;
-    /* background-image: url("../images/stars.jpg"); */
+    background-image: url("../images/stars.jpg");
     background-size: cover;
     background-position: center center;
+    /* background-color: crimson; */
 }
 
 
@@ -105,11 +104,11 @@ main section {
 
 }
 
-#fff {
+#id2 {
     background-color: rgba(240, 128, 128, 0.308);
 }
 
-#eee {
+#id1 {
   background-color: rgba(37, 190, 241, 0.384);
 }
 
@@ -134,7 +133,10 @@ footer {
     justify-content: center;
     flex: 0 1 40px;
 } 
-
+                                        /* NAV BAR */
+footer nav {
+    display: flex;
+}
 
 /* main {
     background-image: url("../images/toroid.png");
