@@ -3,7 +3,7 @@
     --primary-border-colour: lightblue;
     --primary-font-color: green;
     --primary-headline-font: Helvetica;
-    --primary-font-size: 64px;
+    --primary-font-size: 80px;
 
 
     --secondary-bg-color: pink;
@@ -13,20 +13,32 @@
     --secondary-font-size: 16px;
 
     font-family: avenir;
-    font-size: 30px;
-    color: rgb(138, 138, 118);
+    font-size: 40px;
+    color: rgb(23, 24, 51);
 }
 
+  
+  header {  
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+    font-family: cache;
+    background: #333;
+    padding-left: 60PX;
+  }
 
-/* @font-face {
+@font-face {
     font-family: 'cache';
     src:  url('./Cache-Regular.ttf') format('truetype');
-  } */
+  } 
 
 @font-face {
     font-family: 'avenir';
     src: url('./AvenirLTStd-Roman.otf');
 }
+
+
+
+
 
 #id2:hover ~ #id1 {
     filter: blur(1000px);
@@ -60,7 +72,7 @@ header {
     flex: 0 1 auto;
     min-width: 750px;
     justify-content: space-around;
-    background-color: rgba(0, 255, 115, 0.384);
+    background-color: rgba(0, 255, 115, 0);
 }
 
 header h1 {
@@ -142,3 +154,20 @@ footer nav {
     background-image: url("../images/toroid.png");
 } */
 
+
+@keyframes slideInFromLeft {
+    0% {
+      /* transform: translateX(-100%); */
+      filter: blur(1000px);
+    }
+  
+    50% {
+        /* transform: translateX(-100%); */
+        filter: blur(1000px);
+      }
+    100% {
+      /* transform: translateX(0); */
+        filter: blur(0px);
+        
+    }
+  }
