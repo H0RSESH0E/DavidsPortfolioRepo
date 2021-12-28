@@ -42,14 +42,32 @@ body {
     height: 100%;
 }
 
+#whole-page > * {
+    margin: 25px;
+}
                                         /* HEADER  */
 header {
     height: 15%;
     background-color: rgba(0, 0, 255, 0.445);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
 }
                                         /* MAIN  */
 main {
+    height: 30%;
+    background-color: rgba(255, 0, 0, 0.521);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+main img {
+    height: 900px;
 }
                                         /* FOOTER */
 footer {
