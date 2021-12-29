@@ -10,15 +10,11 @@
     --2-border-color: red;
     --2-font-color: #0f1031;
     --2-headline-font: avenir;
-<<<<<<< HEAD
-    --2-font-size: 20px;
-=======
     --2-font-size: 37px;
 
     --size-icon: 100px;
     --size-s_margin: 10px;
     --size-l_margin: 40px;
->>>>>>> develop
 
     font-family: var(--2-headline-font);
     font-size: var(--2-font-size);
@@ -39,10 +35,6 @@ html,
 body {
     height: 100%;
     margin: 0;
-<<<<<<< HEAD
-    /* background-color: rgba(153, 205, 50, 0.404); */
-=======
->>>>>>> develop
     background-image: url(../images/stars.jpg);
     background-size: cover;
 }    
