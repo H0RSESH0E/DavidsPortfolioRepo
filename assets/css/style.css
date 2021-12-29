@@ -35,7 +35,6 @@ html,
 body {
     height: 100%;
     margin: 0;
-    /* background-color: rgba(153, 205, 50, 0.404); */
     background-image: url(../images/stars.jpg);
     background-size: cover;
 }    
@@ -166,3 +165,11 @@ text {
         
     }
   }
+
+  @media only screen and (max-width: 320) {}
+
+  @media only screen and (min-width: 415) {}
+
+  @media only screen and (min-width: 720) {}
+
+  @media only screen and (min-width: 1024) {}
