@@ -3,7 +3,7 @@
     --1-border-colour: lightblue;
     --1-font-color: green;
     --1-headline-font: cache;
-    --1-font-size: 200px;
+    --1-font-size: 180px;
 
 
     --2-bg-color: pink;
@@ -45,7 +45,7 @@ body {
 }
 
 #whole-page > * {
-    margin: 25px;
+    /* margin: 25px; */
 }
                                         /* HEADER  */
 header {
@@ -86,14 +86,10 @@ footer {
 footer #name-block {
     position: absolute;
     left: 2%;
-    bottom: 70%;
+    bottom: 75%;
     font-family: var(--1-headline-font);
     font-size: var(--1-font-size);
     /* background-color: rgba(39, 82, 61, 0.719); */
-}
-
-footer img {
-    width: 85%;
 }
 
 footer ul {
@@ -101,33 +97,41 @@ footer ul {
     width: 100%;
     list-style: none;
     justify-content: space-around;
+
 }
 
 footer ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 15%;
-    flex: 1 15%;
+    justify-content: flex-end;
+
+    flex: 1;
     background-color: rgba(60, 82, 16, 0.445);
-    max-height: 90px;
-    border: 10px solid yellow;
+    
+    border: 3px solid yellow;
 }
 
 .list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
     font-size: var(--2-font-size);
-    text-align: center;
     padding: 5%;
     border: 3px solid rgb(0, 238, 255);
-    width: 100%;
+    width: ;
 }
 
-/* .list-container img {
-    width: 85%;
-} */
+.list-container img {
+    width: 85px;
+    margin: 5%;
+}
 
-
+text {
+    border: 1px dotted pink;
+}
 @keyframes  {
     0% {
       /* transform: translateX(-100%); */
