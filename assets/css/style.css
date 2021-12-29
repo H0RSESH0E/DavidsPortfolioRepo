@@ -82,54 +82,6 @@ main {
     align-items: center;
 }
 
-<<<<<<< HEAD
-/* main img {
-    height: 800px; */
-}
-                                        /* FOOTER */
-footer {
-    display: flex;
-    flex-direction: row;
-    height: 15%;
-    border: 6px dotted rgba(255, 0, 242, 0.459);
-    background-image: linear-gradient(#df0c0ce5, #243e90);
-}
-
-#name-nav-container {
-    display: flex;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    justify-content: space-around;
-    background-color: rgba(60, 82, 16, 0.445);
-    border: 2px solid yellow;
-}
-
-#name-block {
-    position: absolute;
-    left: 80px;
-    bottom: 100%;
-    font-family: var(--1-headline-font);
-    font-size: var(--1-font-size);
-    background-color: rgba(39, 82, 61, 0.719);
-}
-
-div.nav-choice {
-    
-    display: block;
-   
-    height: 200px;
-    width: 100px;
-    font-size: var(--2-font-size);
-    border: 1px solid rgb(0, 225, 255);
-    background-color: rgba(255, 0, 242, 0.486);
-}
-
-.nav-choice img {
-    height: 100%;
-    width: 100%;
-    padding: 10%;
-=======
 main img {
     height: 200px;
 }
@@ -191,7 +143,6 @@ footer .nav-menu-items text {
     display: flex;
     justify-content:;
 
->>>>>>> develop
 }
 
 footer .nav-menu-items img {
