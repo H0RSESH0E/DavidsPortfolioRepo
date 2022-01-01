@@ -47,9 +47,9 @@ body {
     height: 100%;
 }
 
-#whole-page > * {
-    /* margin: 25px; */
-}
+/* #whole-page > * {
+    margin: 25px;
+} */
                                         /* HEADER  */
 header {
     height: 10%;
@@ -75,7 +75,7 @@ main {
 }
 
 main img {
-    height: 200px;
+    height: 600px;
 }
                                         /* FOOTER */
 footer {
@@ -91,7 +91,7 @@ footer {
 #footer-section {
     /* background-color: rgb(127, 80, 255); */
     /* background-image: linear-gradient(rgba(0, 0, 0, 0), var(--2-bg-color), rgba(0, 0, 0, 0)); */
-    position: absolute;
+    position: fixed;
     bottom: var(--size-l_margin);
     margin: 0 0;
     height: 100%;
@@ -168,7 +168,16 @@ text {
 
   @media only screen and (max-width: 320) {}
 
-  @media only screen and (min-width: 415) {}
+  @media only screen and (min-width: 415) and (max-aspect-ratio:2/3){
+
+    --1-font-size: 120px;
+    --2-font-size: 37px;
+
+    --size-icon: 100px;
+    --size-s_margin: 10px;
+    --size-l_margin: 40px;
+
+  }
 
   @media only screen and (min-width: 720) {}
 
