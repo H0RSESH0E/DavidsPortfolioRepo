@@ -35,7 +35,7 @@ html,
 body {
     height: 100%;
     margin: 0;
-    background-image: url(../images/stars.jpg);
+    background-image: url(../images/mobile-bg-stars.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -115,20 +115,21 @@ footer {
     align-items: flex-end;
 }
 
-#avatar {
+#avatar-block {
     position: absolute;
     bottom: 102%;
     height: 100%;
     width: 100%;
+    background-image: url(../images/mobile-bg-stars.png);
     background-color: var(--1-bg-color);
-    border:  solid var(--1-bg-color);
+    border: 1px solid var(--1-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-#avatar img {
+#avatar-block img {
     height: calc(2.5*var(--size-icon));
     mix-blend-mode: color-dodge;
 }
@@ -144,6 +145,7 @@ footer #title-block {
     flex-direction: column;
     align-items: center;
     backdrop-filter: blur(2px);
+    margin: 2%;
 }
 
 footer #title-block text {
