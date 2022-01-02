@@ -36,7 +36,7 @@ body {
     height: 100%;
     margin: 0;
     background-image: url(../images/mobile-bg-stars.png);
-    background-size: cover;
+    background-size: auto; 
     background-position: center;
     background-attachment: fixed;
 }    
@@ -49,6 +49,26 @@ body {
     height: 100%;
 }
 
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
 /* #whole-page > * {
     margin: 25px;
 } */
@@ -59,16 +79,19 @@ header {
     left: 0;
     width: 100%;
     height: 10%;
-    background-image: linear-gradient(#0f1031, #00000000);
+    /* background-image: linear-gradient(#0f1031, #00000000); */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header img {
+#inspirational-quote {
+    width: 75%;
+    font-family: var(--2-headline-font);
+    font-size: calc(1.5*var(--2-font-size));
+    color: var(--1-font-color);
     position: absolute;
-    width: 100px;
-    top: 10%;
+    top: 100%;
 
 }
                                         /* MAIN  */
@@ -101,7 +124,7 @@ footer {
     width: 100%;
     /* background-color: rgba(13, 177, 189, 0.74); */
     
-    background-image: linear-gradient(#00000000, #243e90);
+    /* background-image: linear-gradient(#00000000, #243e90); */
 
 }
 #footer-section {
@@ -118,11 +141,12 @@ footer {
 #avatar-block {
     position: absolute;
     bottom: 102%;
-    height: 100%;
+    height: 70%;
     width: 100%;
     background-image: url(../images/mobile-bg-stars.png);
-    background-color: var(--1-bg-color);
-    border: 1px solid var(--1-bg-color);
+    background-size: auto;
+    background-position: -141px -635px;
+    /* border: 1px solid var(--1-bg-color); */
     display: flex;
     justify-content: center;
     align-items: center;
