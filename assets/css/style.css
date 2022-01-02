@@ -41,29 +41,33 @@ body {
     background-attachment: fixed; */
 }    
 
-                                        /* WHOLE PAGE CONTAINER STYLE  */
-#whole-page {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    background-image: url(../images/mobile-bg-stars.png);
+body {
+background-image: url(../images/mobile-bg-stars.png);
     background-size: auto; 
     background-position: center;
     background-attachment: fixed;
 }
 
 #avatar-gif {
-    height: calc(2*var(--size-icon));
-    position: fixed;
-    bottom: 150PX;
-    left: calc(6px + 2%) ;
+    object-fit: cover;
+    width: calc(3*var(--size-icon));
     height: calc(3*var(--size-icon));
-    
+    position: fixed;
+    margin-bottom: calc( 150px + 2% );
+    bottom: 0;
+    left: calc( 4px + 2% );
+    /* height: calc(3*var(--size-icon)); */
     z-index: 1;
     mix-blend-mode: color-dodge;
+    /* border: 1px solid burlywood; */
 }
+
+                                        /* WHOLE PAGE CONTAINER STYLE  */
+#whole-page {
+    
+} 
+
+
 
 a {
     text-decoration: none;
@@ -177,12 +181,6 @@ z-index: 10;
 
 }
 
-#avatar-block img {
-    position: absolute;
-    top: -50px;
-    height: calc(2.5*var(--size-icon));
-    mix-blend-mode: color-dodge;
-}
 
 footer #title-block {
     background-color: var(--2-bg-color);
