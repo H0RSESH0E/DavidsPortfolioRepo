@@ -15,6 +15,7 @@
     --size-icon: 35px;
     --size-s_margin: 10px;
     --size-l_margin: 40px;
+    --shadow: "2px 2px 2px #0f1031"
 
     font-family: var(--2-headline-font);
     font-size: var(--2-font-size);
@@ -78,6 +79,7 @@ a {
     text-decoration: none;
     font-family: var(--2-headline-font);
     color: var(--1-font-color);
+    text-shadow: 2px 2px 3px var(--2-font-color);
 
 }
 
