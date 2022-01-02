@@ -201,6 +201,7 @@ footer #title-block {
     align-items: center;
     backdrop-filter: blur(2px);
     margin: 2%;
+    padding-top: calc( 0.5 * var(--size-s_margin));
     z-index: 10;
 }
 
