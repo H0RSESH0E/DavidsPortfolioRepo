@@ -107,11 +107,13 @@ header {
                                         /* MAIN  */
 main {
     /* background-color: #9d9fa278; */
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex: 0 2 0;
+    z-index: 2;
 }
 
 main section {
@@ -139,6 +141,7 @@ footer {
     align-items: flex-end;
     height: 35%;
     width: 100%;
+z-index: 10;    
     /* background-color: rgba(13, 177, 189, 0.74); */
     
     /* background-image: linear-gradient(#00000000, #243e90); */
@@ -147,26 +150,30 @@ footer {
 #footer-section {
     /* background-color: rgb(127, 80, 255); */
     /* background-image: linear-gradient(rgba(0, 0, 0, 0), var(--2-bg-color), rgba(0, 0, 0, 0)); */
+    position: relative;
     margin: 0 0;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    z-index: 10;
 }
 
 #avatar-block {
-    position: absolute;
-    bottom: 102%;
-    height: 70%;
-    width: 100%;
+    position: fixed;
+    bottom: 150PX;
+    left: calc(6px + 2%) ;
+    height: calc(3*var(--size-icon));
+    width:  calc(3*var(--size-icon));
     background-image: url(../images/mobile-bg-stars.png);
     background-size: auto;
     background-position: -141px -635px;
-    /* border: 1px solid var(--1-bg-color); */
+    /* border: 4px solid var(--1-bg-color); */
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
 }
 
@@ -187,6 +194,7 @@ footer #title-block {
     align-items: center;
     backdrop-filter: blur(2px);
     margin: 2%;
+    z-index: 10;
 }
 
 footer #title-block text {
@@ -226,6 +234,7 @@ footer #title-block text {
     text-align: center;
     color: #fff;
     flex: 1 2;
+    z-index: 10;
 }
 
 .nav-menu-items a {
