@@ -74,11 +74,10 @@ body {
     
 } 
 
-
-
 a {
     text-decoration: none;
     font-family: var(--2-headline-font);
+    color: var(--1-font-color);
 
 }
 
@@ -111,7 +110,7 @@ a:visited {
 } */
                                         /* HEADER  */
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -120,6 +119,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--size-l_margin);
+    display: flex;
+    justify-content: space-around;
+    /* background-color: var(--1-bg-color); */
+    background-image: linear-gradient( var(--2-font-color), #00000000);
+    color: var(--1-font-color);
+    padding-top: var(--size-s_margin);
+    z-index: 50;
 }
 
 #inspirational-quote {
