@@ -42,12 +42,16 @@ body {
 }    
 
 body {
-background-image: url(../images/mobile-bg-stars.png);
+
+}
+
+#whole-page {
+    background-image: url(../images/mobile-bg-stars.png);
     background-size: auto; 
     background-position: center;
     background-attachment: fixed;
-}
 
+}
 #avatar-gif {
     object-fit: cover;
     width: calc(3*var(--size-icon));
