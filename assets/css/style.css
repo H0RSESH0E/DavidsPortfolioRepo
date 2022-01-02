@@ -42,7 +42,10 @@ body {
 }    
 
 body {
-
+    background-image: url(../images/mobile-bg-stars.png);
+    background-size: auto; 
+    background-position: center;
+    background-attachment: fixed;
 }
 
 #whole-page {
