@@ -35,18 +35,34 @@ html,
 body {
     height: 100%;
     margin: 0;
-    background-image: url(../images/mobile-bg-stars.png);
+    /* background-image: url(../images/mobile-bg-stars.png);
     background-size: auto; 
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }    
 
                                         /* WHOLE PAGE CONTAINER STYLE  */
 #whole-page {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    background-image: url(../images/mobile-bg-stars.png);
+    background-size: auto; 
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#avatar-gif {
+    height: calc(2*var(--size-icon));
+    position: fixed;
+    bottom: 150PX;
+    left: calc(6px + 2%) ;
+    height: calc(3*var(--size-icon));
+    
+    z-index: 1;
+    mix-blend-mode: color-dodge;
 }
 
 a {
@@ -124,14 +140,9 @@ main section {
 
 #main-section-break {
     background-color: var(--1-bg-color);
-    content: " p ";
-    height: 800px;
+    height: 600px;
 }
 
-main img {
-    height: 400px;
-    mix-blend-mode: overlay;
-}
                                         /* FOOTER */
 footer {
     position: fixed;
@@ -162,22 +173,13 @@ z-index: 10;
 
 #avatar-block {
     position: fixed;
-    bottom: 150PX;
-    left: calc(6px + 2%) ;
-    height: calc(3*var(--size-icon));
-    width:  calc(3*var(--size-icon));
-    background-image: url(../images/mobile-bg-stars.png);
-    background-size: auto;
-    background-position: -141px -635px;
-    /* border: 4px solid var(--1-bg-color); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+    
 
 }
 
 #avatar-block img {
+    position: absolute;
+    top: -50px;
     height: calc(2.5*var(--size-icon));
     mix-blend-mode: color-dodge;
 }
