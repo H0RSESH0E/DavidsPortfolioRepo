@@ -37,6 +37,7 @@ body {
     scroll-behavior: smooth;
     height: 100%;
     margin: 0;
+    -webkit-tap-highlight-color: transparent;
     /* background-image: url(../images/mobile-bg-stars.png);
     background-size: auto; 
     background-position: center;
@@ -89,7 +90,7 @@ a:hover img:hover {
 
 :target {
     font-size: 75px;
-    line-height: 0.9;
+    line-height: 1;
     transition: 0.8s ease-in;
 }
 
@@ -173,8 +174,8 @@ main section {
 }
 
 #main-section-break {
-    background-color: var(--1-bg-color);
-    height: 200px;
+    /* FOR LAYOUT PURPOSES: background-color: var(--1-bg-color); */
+    height: 600px;
 }
 
 #my-work {
@@ -185,7 +186,7 @@ main section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 55%;
+    width: 75%;
     font-size: var(--2-font-size);
     margin: var(--size-s_margin) auto 0 auto;
 }
@@ -193,21 +194,21 @@ main section {
 #my-work-article div {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: var(--size-s_margin);
     height: 110px;
-    background-color: rgba(238, 130, 238, 0.253);
+    /* FOR LAYOUT TESTING: background-color: rgba(238, 130, 238, 0.253); */
 }
 
 #my-work-article a img {
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
     margin: 15px;
 
 }
 
 #my-work-article div:first-child a img {
-    height: 75px;
-    width: 75px;
+    height: 95px;
+    width: 95px;
 }
 
                                         /* FOOTER */
