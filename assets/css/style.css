@@ -248,9 +248,19 @@ footer #title-block text {
     width: 100%;
 }
 
-
+#upper-nav-menu-block .nav-menu-items a {
+    position: absolute;
+    top: -75px;
+}
+    
+#lower-nav-menu-block .nav-menu-items a {
+    position: absolute;
+    left: 75px;
+    top: 30px;
+}
 
 .nav-menu-items {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,6 +270,7 @@ footer #title-block text {
     flex: 1 2;
     z-index: 10;
     background-color: rgba(255, 255, 0, 0.26);
+    border: 1px solid chartreuse;
 }
 
 .nav-menu-items a {
@@ -274,7 +285,7 @@ footer #title-block text {
     color: #fff;
     
     /* margin: 2% 4%; */
-    background-color: blueviolet;
+    background-color: rgba(137, 43, 226, 0.315);
 
 }
 
