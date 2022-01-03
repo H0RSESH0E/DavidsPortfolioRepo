@@ -84,8 +84,8 @@ a {
 }
 
 a:hover img:hover {
-    height: calc(1.5 * var(--size-icon));
-    width: calc(1.5 * var(--size-icon));
+    height: calc(1.8 * var(--size-icon));
+    width: calc(1.8 * var(--size-icon));
     
 }
 
@@ -235,29 +235,37 @@ footer #title-block text {
     flex-wrap: wrap;
     align-items: flex-start;
     /* height: calc(4*var(--size-icon)); */
-    margin: 2%;
+    margin: 0;
     flex: 1 0 0;
-    background-color: rgba(255, 255, 0, 0.336);
+    background-color: rgba(255, 0, 221, 0.336);
+    /* height: calc(8 * var(--size-icon)); */
+    
 } 
 
-#upper-nav-menu-block,
+#upper-nav-menu-block{
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    border: 1px solid red;
+}
+
 #lower-nav-menu-block {
     display: flex;
     align-items: baseline;
-    margin: 1.5% 0;
+    
     width: 100%;
+    background-color: rgba(65, 105, 225, 0.308);
 }
 
-#upper-nav-menu-block .nav-menu-items a {
+/* #upper-nav-menu-block .nav-menu-items a {
     position: absolute;
-    top: -75px;
+   
 }
     
 #lower-nav-menu-block .nav-menu-items a {
     position: absolute;
-    left: 75px;
-    top: 30px;
-}
+    
+} */
 
 .nav-menu-items {
     position: relative;
@@ -266,25 +274,23 @@ footer #title-block text {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
     flex: 1 2;
     z-index: 10;
     background-color: rgba(255, 255, 0, 0.26);
     border: 1px solid chartreuse;
+    height: calc(3 * var(--size-icon));
 }
 
 .nav-menu-items a {
     position: absolute;
-    width: calc( 2 * var(--size-icon));
-    height: calc( 3 * var(--size-icon));
+    /* width: calc( 2 * var(--size-icon));
+    height: calc( 3 * var(--size-icon)); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
-    
-    /* margin: 2% 4%; */
     background-color: rgba(137, 43, 226, 0.315);
 
 }
@@ -297,7 +303,7 @@ footer .nav-menu-items text {
 footer .nav-menu-items img {
     height: var(--size-icon);
     width: var(--size-icon);
-    transition: 0.8s ease-in-out;
+    transition: 0.3s ease-in-out;
    
 
 }
