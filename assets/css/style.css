@@ -149,9 +149,12 @@ header {
     width: 75%;
     font-family: var(--2-headline-font);
     font-size: calc(1.5*var(--2-font-size));
-    color: var(--1-font-color);
+    color: var(--2-font-color);
+    backdrop-filter: blur(2px);
+    border-radius: 3%;
     position: absolute;
     top: 100%;
+    text-shadow: 0.5px 0.5px 1px var(--1-font-color);
 
 }
                                         /* MAIN  */
@@ -254,6 +257,7 @@ footer #title-block {
     margin: 2%;
     padding-top: calc( 0.5 * var(--size-s_margin));
     z-index: 10;
+    border-radius: 2%;
 }
 
 footer #title-block text {
