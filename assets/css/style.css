@@ -34,6 +34,7 @@
 
 html,
 body {
+    scroll-behavior: smooth;
     height: 100%;
     margin: 0;
     /* background-image: url(../images/mobile-bg-stars.png);
@@ -85,8 +86,12 @@ a {
 
 a:hover img:hover {
     height: calc(1.8 * var(--size-icon));
-    width: calc(1.8 * var(--size-icon));
+    width: calc(1.8 * var(--size-icon)); 
     
+} 
+
+:target {
+    font-size: 75px;
 }
 
 a:visited {
@@ -234,38 +239,24 @@ footer #title-block text {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    /* height: calc(4*var(--size-icon)); */
     margin: 0;
     flex: 1 0 0;
-    background-color: rgba(255, 0, 221, 0.336);
-    /* height: calc(8 * var(--size-icon)); */
-    
+    /* FOR LAYOUT TESTING: background-color: rgba(255, 0, 221, 0.336); */
 } 
 
 #upper-nav-menu-block{
     display: flex;
     align-items: baseline;
     width: 100%;
-    border: 1px solid red;
+    /* FOR LAYOUT TESTING: border: 1px solid red; */
 }
 
 #lower-nav-menu-block {
     display: flex;
     align-items: baseline;
-    
     width: 100%;
-    background-color: rgba(65, 105, 225, 0.308);
+    /* FOR LAYOUT TESTING: background-color: rgba(65, 105, 225, 0.308); */
 }
-
-/* #upper-nav-menu-block .nav-menu-items a {
-    position: absolute;
-   
-}
-    
-#lower-nav-menu-block .nav-menu-items a {
-    position: absolute;
-    
-} */
 
 .nav-menu-items {
     position: relative;
@@ -276,22 +267,20 @@ footer #title-block text {
     text-align: center;
     flex: 1 2;
     z-index: 10;
-    background-color: rgba(255, 255, 0, 0.26);
-    border: 1px solid chartreuse;
+    /* FOR LAYOUT TESTING: background-color: rgba(255, 255, 0, 0.26);
+    border: 1px solid chartreuse; */
     height: calc(3 * var(--size-icon));
 }
 
 .nav-menu-items a {
     position: absolute;
-    /* width: calc( 2 * var(--size-icon));
-    height: calc( 3 * var(--size-icon)); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
-    background-color: rgba(137, 43, 226, 0.315);
+    /* FOR LAYOUT TESTING: background-color: rgba(137, 43, 226, 0.315); */
 
 }
 
