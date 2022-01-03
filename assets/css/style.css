@@ -140,7 +140,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(2 * var(--size-l_margin));
+    height: calc(1.5 * var(--size-l_margin));
     display: flex;
     justify-content: space-around;
     /* background-color: var(--1-bg-color); */
