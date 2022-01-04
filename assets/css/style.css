@@ -67,7 +67,7 @@ body {
     left:  calc( var(--size-screen-width-multiplier) * (2%) + (4px));
     z-index: 1;
     mix-blend-mode: color-dodge;
-    animation: avatar-intro 4s ease-in-out 0s 1 normal none;
+    animation: avatar-intro 16s ease-in-out 0s 1 normal none;
 
 }
 
@@ -76,16 +76,16 @@ body {
         transform: translate(125vw, -125vh) scale(0.01)
      
     } 
-    20% {
+    10% {
         transform: translate(45vw, -45vh) scale(6)
     
     }
     40% {
-        transform: translate(45vw, -45vh) scale(26)
+        transform: translate(45vw, -45vh) scale(22)
     
     }
     45% {
-        transform: translate(45vw, -45vh) scale(30)
+        transform: translate(45vw, -45vh) scale(26)
     
     }
     50% {
@@ -171,7 +171,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: header-present 8s ease-in-out 0s 1 normal none;
+    animation: header-present 22s ease-in-out 0s 1 normal none;
 }
 
 #header-nav {
@@ -268,7 +268,7 @@ main section {
         transform: translate(0%, 100%) 
         
     } 
-    50% {
+    60% {
         transform: translate(0%, 100%) 
         
     } 
@@ -288,7 +288,7 @@ footer {
     height: calc(6 * var(--size-l_margin));
     width: 100%;
     z-index: 10;
-    animation: footer-present 4s ease-in-out 0s 1 normal none;
+    animation: footer-present 10s ease-in-out 0s 1 normal none;
    
 
 }
