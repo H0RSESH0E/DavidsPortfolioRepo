@@ -41,10 +41,6 @@ body {
     height: 100%;
     margin: 0;
     -webkit-tap-highlight-color: transparent;
-    /* background-image: url(../images/mobile-bg-stars.png);
-    background-size: auto; 
-    background-position: center;
-    background-attachment: fixed; */
 }    
 
 body {
@@ -69,10 +65,8 @@ body {
     margin-bottom: calc( 150px + 2% );
     bottom: 0;
     left:  calc( var(--size-screen-width-multiplier) * (2%) + (4px));
-    /* height: calc(3*var(--size-icon)); */
     z-index: 1;
     mix-blend-mode: color-dodge;
-    /* border: 1px solid burlywood; */
 }
 
                                         /* WHOLE PAGE CONTAINER STYLE  */
@@ -86,8 +80,8 @@ a {
 }
 
 a:hover img:hover {
-    height: calc(1.8 * var(--size-icon));
-    width: calc(1.8 * var(--size-icon)); 
+    height: calc(1.5 * var(--size-icon));
+    width: calc(1.5 * var(--size-icon)); 
     
 } 
 
@@ -141,7 +135,6 @@ header {
     display: flex;
     justify-content: space-around;
     height: calc(2.5 * var(--size-l_margin));
-    /* FOR LAYOUT TESTING: background-color: var(--1-bg-color); */
     background-image: linear-gradient( var(--2-font-color), #00000000);
     color: var(--1-font-color);
     padding-top: calc( 0.5 * var(--size-l_margin));
@@ -152,7 +145,6 @@ header {
 
                                         /* MAIN  */
 main {
-    /* background-color: #9d9fa278; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -173,7 +165,6 @@ main section {
 }
 
 #main-section-break {
-    /* FOR LAYOUT PURPOSES: background-color: var(--1-bg-color); */
     height: 600px;
 }
 
@@ -187,7 +178,6 @@ main section {
     backdrop-filter: blur(2px);
     border-radius: var(--size-s_margin);
     line-height: 1.4;
-    /* text-shadow: 0.8px 0.8px 1px var(--1-font-color); */
 }
 
 #my-work {
@@ -210,7 +200,6 @@ main section {
     justify-content: center;
     margin: var(--size-s_margin);
     height: 110px;
-    /* background-color: rgba(238, 130, 238, 0.253); */
 }
 
 #my-work-article a img {
@@ -234,14 +223,12 @@ footer {
     align-items: flex-end;
     height: calc(6 * var(--size-l_margin));
     width: 100%;
-z-index: 10;    
-    /* background-color: rgba(13, 177, 189, 0.74); */
-    
-    /* background-image: linear-gradient(#00000000, #243e90); */
+    z-index: 10;    
+   
 
 }
 #footer-section {
-    /* background-color: rgb(127, 80, 255); */
+    
     background-image: linear-gradient( #00000000,#00000000,var(--1-bg-color),var(--1-bg-color));
     position: relative;
     margin: 0 0;
@@ -281,40 +268,52 @@ footer #title-block text {
  }    
 
 #nav-menu-block {
+    
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin: 0;
+    margin: 5% 0;
     flex: 1 0 0;
-    /* FOR LAYOUT TESTING: background-color: rgba(255, 0, 221, 0.336); */
+    background-color: rgba(255, 0, 221, 0.336);
 } 
 
 #upper-nav-menu-block{
+    position: ;
     display: flex;
     align-items: baseline;
     width: 100%;
-    /* FOR LAYOUT TESTING: border: 1px solid red; */
+  
+}
+
+#upper-nav-menu-block .nav-menu-items {
+    justify-content: flex-end;
 }
 
 #lower-nav-menu-block {
     display: flex;
     align-items: baseline;
     width: 100%;
-    /* FOR LAYOUT TESTING: background-color: rgba(65, 105, 225, 0.308); */
+   
+}
+
+#lower-nav-menu-block .nav-menu-items {
+    justify-content: flex-end;
+}
+
+#lower-nav-menu-block .nav-menu-items:last-child {
+    justify-content: flex-start;
 }
 
 .nav-menu-items {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    
     align-items: center;
     text-align: center;
     flex: 1 2;
     z-index: 10;
-    /* FOR LAYOUT TESTING: background-color: rgba(255, 255, 0, 0.26);
-    border: 1px solid chartreuse; */
-    height: calc(2.3 * var(--size-icon));
+    height: calc(1.9 * var(--size-icon));
 }
 
 .nav-menu-items a {
@@ -325,8 +324,6 @@ footer #title-block text {
     align-items: center;
     text-align: center;
     color: #fff;
-    /* FOR LAYOUT TESTING: background-color: rgba(137, 43, 226, 0.315); */
-
 }
 
 footer .nav-menu-items text {
@@ -342,6 +339,5 @@ footer .nav-menu-items img {
 
 }
 text {
-    /* border: 1px dotted pink; */
     margin: var(--size-s_margin);
 }
