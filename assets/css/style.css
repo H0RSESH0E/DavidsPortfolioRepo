@@ -238,6 +238,23 @@ main section {
 }
 
                                         /* FOOTER */
+
+@keyframes footer-present {
+    0% {
+        transform: translate(0%, 100%) 
+        
+    } 
+    50% {
+        transform: translate(0%, 100%) 
+        
+    } 
+    100% {
+        transform: translate(0%, 0%)
+            
+    }
+}
+
+
 footer {
     position: fixed;
     bottom: 0px;
@@ -246,7 +263,8 @@ footer {
     align-items: flex-end;
     height: calc(6 * var(--size-l_margin));
     width: 100%;
-    z-index: 10;    
+    z-index: 10;
+    animation: footer-present 4s ease-in-out 0s 1 normal none;
    
 
 }
