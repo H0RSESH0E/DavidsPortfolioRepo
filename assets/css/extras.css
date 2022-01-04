@@ -1,18 +1,16 @@
 
-@keyframes  {
+
+
+@keyframes avatar-intro {
     0% {
-      /* transform: translateX(-100%); */
-      filter: blur(1000px);
+      transform: translateX(40%);
     }
   
     50% {
-        /* transform: translateX(-100%); */
-        filter: blur(1000px);
+        transform: translateX(20%);
       }
     100% {
-      /* transform: translateX(0); */
-        filter: blur(0px);
-        
+      transform: translateX(0);        
     }
   }
 

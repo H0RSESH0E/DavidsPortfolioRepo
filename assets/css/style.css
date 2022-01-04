@@ -67,6 +67,7 @@ body {
     left:  calc( var(--size-screen-width-multiplier) * (2%) + (4px));
     z-index: 1;
     mix-blend-mode: color-dodge;
+    animation: avatar-intro 3s ease-in-out 5s 1 normal none;
 }
 
                                         /* WHOLE PAGE CONTAINER STYLE  */
@@ -339,3 +340,16 @@ footer .nav-menu-items img {
 text {
     margin: var(--size-s_margin);
 }
+
+
+@keyframes avatar-intro {
+    0% {
+      transform: translateX(-40%);
+    }
+  
+    50% {
+        transform: translateX(20%);
+      }
+    100% {
+      transform: translateX(0);        
+    }
