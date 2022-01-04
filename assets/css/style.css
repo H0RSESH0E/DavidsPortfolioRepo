@@ -73,18 +73,26 @@ body {
 
 @keyframes avatar-intro {
     0% {
-        transform: translate(800%,-1000%) scale(0.01)
+        transform: translate(125vw, -125vh) scale(0.01)
      
     } 
-    30% {
-        transform: translate(700%, -100%) scale(9)
+    20% {
+        transform: translate(45vw, -45vh) scale(6)
+    
+    }
+    40% {
+        transform: translate(45vw, -45vh) scale(26)
+    
+    }
+    45% {
+        transform: translate(45vw, -45vh) scale(30)
     
     }
     50% {
-        transform: translate(0%, -50%) scale(0.01)
+        transform: translate(5vw, -10vh) scale(0.01)
     }
     85% {
-        transform: translate(0%, -50%) scale(0.01)
+        transform: translate(5vw, -10vh) scale(0.01)
     }
     100% {
       transform: translate(0%, 0%) scale(1)
