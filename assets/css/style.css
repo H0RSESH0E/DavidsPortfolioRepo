@@ -148,18 +148,7 @@ header {
     z-index: 50;
 }
 
-#about-me-text {
-    width: 75%;
-    font-family: var(--2-headline-font);
-    font-size: calc(1.5*var(--2-font-size));
-    color: var(--2-font-color);
-    padding: var(--size-s_margin);
-    background-color: var(--2-bg-color);
-    backdrop-filter: blur(2px);
-    border-radius: var(--size-s_margin);
-    line-height: 1.4;
-    /* text-shadow: 0.8px 0.8px 1px var(--1-font-color); */
-}
+
 
                                         /* MAIN  */
 main {
@@ -188,6 +177,19 @@ main section {
     height: 600px;
 }
 
+#about-me-text {
+    width: 75%;
+    font-family: var(--2-headline-font);
+    font-size: calc(1.5*var(--2-font-size));
+    color: var(--2-font-color);
+    padding: var(--size-s_margin);
+    background-color: var(--2-bg-color);
+    backdrop-filter: blur(2px);
+    border-radius: var(--size-s_margin);
+    line-height: 1.4;
+    /* text-shadow: 0.8px 0.8px 1px var(--1-font-color); */
+}
+
 #my-work {
     display: block;
 }
@@ -197,6 +199,7 @@ main section {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 75%;
+    height: 500px;
     font-size: var(--2-font-size);
     margin: var(--size-s_margin) auto 0 auto;
 }
@@ -204,9 +207,10 @@ main section {
 #my-work-article div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: var(--size-s_margin);
     height: 110px;
-    /* FOR LAYOUT TESTING: background-color: rgba(238, 130, 238, 0.253); */
+    /* background-color: rgba(238, 130, 238, 0.253); */
 }
 
 #my-work-article a img {
@@ -303,14 +307,14 @@ footer #title-block text {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     flex: 1 2;
     z-index: 10;
     /* FOR LAYOUT TESTING: background-color: rgba(255, 255, 0, 0.26);
     border: 1px solid chartreuse; */
-    height: calc(3 * var(--size-icon));
+    height: calc(2.3 * var(--size-icon));
 }
 
 .nav-menu-items a {
