@@ -44,14 +44,14 @@ body {
 }    
 
 body {
-    background-image: url(../images/mobile-bg-stars.png);
+    /* background-image: url(../images/mobile-bg-stars.png); */
     background-size: auto; 
     background-position: center;
     background-attachment: fixed;
 }
 
 #whole-page {
-    background-image: url(../images/mobile-bg-stars.png);
+    background-image: url(../images/bg-iPhone.png);
     background-size: auto; 
     background-position: center;
     background-attachment: fixed;
