@@ -114,10 +114,14 @@ a {
 
 }
 
-a:hover img:hover {
+footer a:hover img:hover {
     height: calc(1.5 * var(--size-icon));
     width: calc(1.5 * var(--size-icon)); 
     
+} 
+
+#my-work-article a:hover img {
+    background-color: #FFF;
 } 
 
 :target {
@@ -239,7 +243,7 @@ main section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 75%;
+    width: 80%%;
     /* height: 500px; */
     font-size: var(--2-font-size);
     margin: var(--size-s_margin) auto 0 auto;
@@ -249,19 +253,32 @@ main section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: var(--size-s_margin);
-    height: 12vh;
+    height: 25vh;
+    width: 20vh;
+    margin: 2vh;
+    
+}
+
+#my-work-article div a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 #my-work-article a img {
-    height: 10vh;
-   
-    margin-top: 1vh;
-
+    height: 15vh;
+    width: 15vh;
+    padding: 0.3vh;
+    
+    transition: 0.3s ease-in-out;
 }
 
 #my-work-article div:first-child a img {
-    height: 12vh;
+    height: 20vh;
+    width: 20vh;
     
 }
 
