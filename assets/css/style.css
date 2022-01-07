@@ -114,7 +114,7 @@ a {
     height: va(--size-l_margin);
 }
 
-footer a:hover img {
+footer #nav-menu-block a:hover img {
     height: calc(1.5 * var(--size-icon));
     width: calc(1.5 * var(--size-icon)); 
     
@@ -330,7 +330,7 @@ footer { border: 1px solid yellow;
     left: 0px;
     display: flex;
     align-items: flex-start;
-    height: calc(1 * var(--size-l_margin));
+    height: 235px;
     min-height: 200px;
     width: 100%;
     z-index: 10;
@@ -382,26 +382,26 @@ footer #name-plate text {
      
  }    
 
-#nav-menu-block { border: 1px dotted yellowgreen;
+#nav-menu-block { border: 5px dotted rgba(50, 205, 192, 0.253);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 0;
-    height: 120px;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex: 1 2 0;
+    height: 100%;
+    align-self: flex-end;
 } 
 
-.nav-menu-items { border: 1px dotted rgb(73, 50, 205);
-    position: relative;
+.split-menu-blocks { border: 1px dotted rgba(8, 247, 227, 0.986);
     display: flex;
-    align-items: flex-start;
-    text-align: center;
-    flex: 1 2;
-    z-index: 10;
+    justify-content: space-around;
+    align-items: flex-end;
+    min-width: 49%;
     height: 100px;
+    margin-bottom: 10px;
 }
 
-.nav-menu-items a { background-color: rgba(255, 255, 0, 0.11);
+#nav-menu-block a { background-color: rgba(255, 255, 0, 0.11);
     position: static;
     display: flex;
     flex-direction: column;
@@ -410,14 +410,15 @@ footer #name-plate text {
     text-align: center;
     color: #fff;
     width: 75px;
+    margin-bottom: 22px;
 }
 
-footer .nav-menu-items text {
+footer #nav-menu-block text { border: 1px dotted rgb(205, 50, 50);
     margin: 0 0 -1% 0;
 
 }
 
-footer .nav-menu-items img {
+footer #nav-menu-block img {border: 3px dotted rgb(129, 0, 141);
     height: var(--size-icon);
     width: var(--size-icon);
     transition: 0.3s ease-in-out;
@@ -427,13 +428,16 @@ footer .nav-menu-items img {
 text {
     margin: var(--size-s_margin);
 }
-.nav-menu-items text[graphic]{
+#g-d-text {
     position: relative;
-    color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    color: rgba(158, 22, 22, 0);
     text-shadow: none;
 }
 #ghost-float-text {
     position: absolute;
+    color: var(--1-font-color);
+    text-shadow: var(--shadow);
 }
 
 
