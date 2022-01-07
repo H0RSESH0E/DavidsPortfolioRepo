@@ -2,10 +2,10 @@
 
     /*Fonts*/
     --1-headline-font: cache;
-    --1-font-size: 58px;
+    --1-font-size: 48px;
     --1-font-color: #fff;
     --2-body-font: avenir;
-    --2-font-size: 16px;
+    --2-font-size: 14px;
     --2-font-color: #0f1031;
 
     /* Backgrounds and borders */
@@ -18,7 +18,7 @@
     --shf: calc(812/812); /* Screen Height Factor */
 
     --icon-size:  calc( ( var(--swf) * var(--shf) ) * 35px);
-    --avatar-size:  calc( ( var(--swf) * var(--shf) ) * 115px);
+    --avatar-size:  calc( ( var(--swf) * var(--shf) ) * 100px);
     
     --size-s_margin: calc( ( var(--swf) * var(--shf) ) * 12px);
     --size-l_margin: calc( ( var(--swf) * var(--shf) ) * 38px);
@@ -61,12 +61,12 @@ body {
     object-fit: cover;
     height: var(--avatar-size);
     position: fixed;
-    margin-left: 1.5vw;
-    margin-bottom: calc( 1.5vh + ( var(--swf) * var(--shf) ) * 175px);
+    margin-left: 3.5vw;
+    margin-bottom: calc( 1.7vh + ( var(--swf) * var(--shf) ) * (4 * var(--icon-size)));
     bottom: 0;
-    left: 2.5vw;
+    
     z-index: 1;
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: overlay;
     /* animation: avatar-intro 16s ease-in-out 0s 1 normal none; */
 
 }
@@ -330,8 +330,8 @@ footer {
     left: 0px;
     display: flex;
     align-items: flex-start;
-    height: 200px;
-    min-height: 200px;
+    height: calc( 5 * var(--icon-size));
+    min-height: 0;
     width: 100%;
     z-index: 10;
     /* animation: footer-present 10s ease-in-out 0s 1 normal none; */
@@ -353,7 +353,7 @@ footer {
 
 #name-plate-container {
     width: var(--avatar-size);
-    margin:2.5vw;
+    margin: 3.5vw;
 }
 
 footer #name-plate { 
@@ -370,7 +370,7 @@ footer #name-plate {
 
     padding-top: calc( 0.6 * var(--size-s_margin));
     z-index: 10;
-    border-radius: 3%;
+    border-radius: 5%;
 }
 
 footer #name-plate text { 
