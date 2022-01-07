@@ -17,7 +17,7 @@
     --swf: calc(375/375); /* Screen Width Factor */
     --shf: calc(812/812); /* Screen Height Factor */
 
-    --size-icon:  calc( ( var(--swf) * var(--shf) ) * 50px);
+    --icon-size:  calc( ( var(--swf) * var(--shf) ) * 35px);
     --avatar-size:  calc( ( var(--swf) * var(--shf) ) * 115px);
     
     --size-s_margin: calc( ( var(--swf) * var(--shf) ) * 12px);
@@ -25,9 +25,9 @@
     --shadow: 2px 2px 3px #0f1031;
 }
 
-* {
+/* * {
     background-color: rgba(255, 0, 200, 0.089);
-}
+} */
   
 @font-face {
     font-family: 'cache';
@@ -64,9 +64,9 @@ body {
     margin-left: 1.5vw;
     margin-bottom: calc( 1.5vh + ( var(--swf) * var(--shf) ) * 175px);
     bottom: 0;
-    left: 0;
+    left: 2.5vw;
     z-index: 1;
-    mix-blend-mode: overlay;
+    mix-blend-mode: color-dodge;
     /* animation: avatar-intro 16s ease-in-out 0s 1 normal none; */
 
 }
@@ -111,12 +111,12 @@ a {
 }
 
 .half-height-break {
-    height: va(--size-l_margin);
+    height: 200px;
 }
 
 footer #nav-menu-block a:hover img {
-    height: calc(1.5 * var(--size-icon));
-    width: calc(1.5 * var(--size-icon)); 
+    height: calc(1.5 * var(--icon-size));
+    width: calc(1.5 * var(--icon-size)); 
     
 } 
 
@@ -324,13 +324,13 @@ main section {
 }
 
 
-footer { border: 1px solid yellow;
+footer { 
     position: fixed;
     bottom: 0px;
     left: 0px;
     display: flex;
     align-items: flex-start;
-    height: 235px;
+    height: 200px;
     min-height: 200px;
     width: 100%;
     z-index: 10;
@@ -340,20 +340,20 @@ footer { border: 1px solid yellow;
 }
 #footer-section { 
     
-    background-image: linear-gradient( #00000000,#00000000,var(--1-bg-color),var(--1-bg-color));
+    background-image: linear-gradient( #00000000,var(--1-bg-color),var(--1-bg-color));
     position: relative;
     margin: 0 0;
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 10;
 }
 
 #name-plate-container {
     width: var(--avatar-size);
-    margin:1.5vw;
+    margin:2.5vw;
 }
 
 footer #name-plate { 
@@ -382,7 +382,7 @@ footer #name-plate text {
      
  }    
 
-#nav-menu-block { border: 5px dotted rgba(50, 205, 192, 0.253);
+ #nav-menu-block { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -392,16 +392,16 @@ footer #name-plate text {
     align-self: flex-end;
 } 
 
-.split-menu-blocks { border: 1px dotted rgba(8, 247, 227, 0.986);
+.split-menu-blocks { 
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     min-width: 49%;
-    height: 100px;
-    margin-bottom: 10px;
+    height: 0;
+    margin-bottom: 0;
 }
 
-#nav-menu-block a { background-color: rgba(255, 255, 0, 0.11);
+#nav-menu-block a { 
     position: static;
     display: flex;
     flex-direction: column;
@@ -413,14 +413,14 @@ footer #name-plate text {
     margin-bottom: 22px;
 }
 
-footer #nav-menu-block text { border: 1px dotted rgb(205, 50, 50);
+footer #nav-menu-block text { 
     margin: 0 0 -1% 0;
 
 }
 
-footer #nav-menu-block img {border: 3px dotted rgb(129, 0, 141);
-    height: var(--size-icon);
-    width: var(--size-icon);
+footer #nav-menu-block img {
+    height: var(--icon-size);
+    width: var(--icon-size);
     transition: 0.3s ease-in-out;
    
 
@@ -430,7 +430,6 @@ text {
 }
 #g-d-text {
     position: relative;
-    font-size: 20px;
     color: rgba(158, 22, 22, 0);
     text-shadow: none;
 }
@@ -467,7 +466,7 @@ text {
     
         --swf: calc(550/400);
         --shf: calc(900/800);
-        --size-icon: 6vh;
+        --icon-size: 6vh;
         --size-s_margin: 2vh;
         --size-l_margin: 5.5vh;
         --shadow: "2px 2px 2px #0f1031"
@@ -512,7 +511,7 @@ text {
     
         --swf: calc(800/400);
         --shf: calc(1000/800);
-        --size-icon: 6vh;
+        --icon-size: 6vh;
         --size-s_margin: 2vh;
         --size-l_margin: 5.5vh;
         --shadow: "2px 2px 2px #0f1031"
@@ -524,8 +523,8 @@ text {
 
     #avatar-gif-img {
         object-fit: cover;
-        width: calc(2*var(--size-icon));
-        height: calc(2*var(--size-icon));
+        width: calc(2*var(--icon-size));
+        height: calc(2*var(--icon-size));
         position: fixed;
         margin-bottom: calc(22vh * var(--shf) + (1.5 * var(--size-s_margin)));
         bottom: 0;
@@ -559,7 +558,7 @@ text {
     
         --swf: calc(500/400);
         --shf: calc(900/800);
-        --size-icon: 7vh;
+        --icon-size: 7vh;
         --size-s_margin: 2vh;
         --size-l_margin: 4.5vh;
         --shadow: "2px 2px 2px #0f1031"
@@ -571,8 +570,8 @@ text {
 
     #avatar-gif-img {
         object-fit: cover;
-        width: calc(2*var(--size-icon));
-        height: calc(2*var(--size-icon));
+        width: calc(2*var(--icon-size));
+        height: calc(2*var(--icon-size));
         position: fixed;
         margin-bottom: calc(22vh * var(--shf) + (1.5 * var(--size-s_margin)));
         bottom: 0;
