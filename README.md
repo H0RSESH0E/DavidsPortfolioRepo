@@ -24,7 +24,7 @@ To set up the website:
 ## Usage
 Use this webpage as the landing page of a more extensive website.  A company's presence on the web can provide brand awareness, lead generation, sales, and much more.  
 
-See it online now at: [https://h0rsesh0e.github.io/portfolio/]
+See it online now at: [https://h0rsesh0e.github.io/DavidsPortfolioRepo/]
 
 ## Credits
 This is my second project in the Coding Boot Camp provided by [The School of Continuing Studies, University of Toronto](https://learn.utoronto.ca/) and [Trilogy Education Services](https://www.trilogyed.com/). I am now a full month into the course (though we took one week off for the winter solstice.  I am thrilled by the power of the tools I have been introduced to and I'm becoming very excited by my anticipation of what must be in store.
