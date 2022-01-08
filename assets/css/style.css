@@ -77,19 +77,24 @@ body {
         transform: translate(125vw, -125vh) scale(0.01)
      
     } 
-    10% {
-        transform: translate(45vw, -45vh) scale(6)
+
+    20% {
+        transform: translate(85vw, -85vh) scale(0.01)
+     
+    } 
+    30% {
+        transform: translate(40vw, -45vh) scale(3)
     
     }
-    40% {
-        transform: translate(45vw, -45vh) scale(22)
+    55% {
+        transform: translate(40vw, -35vh) scale(24)
     
     }
-    45% {
-        transform: translate(45vw, -45vh) scale(26)
+    60% {
+        transform: translate(40vw, -25vh) scale(36)
     
     }
-    50% {
+    64% {
         transform: translate(5vw, -10vh) scale(0.01)
     }
     85% {
@@ -316,7 +321,7 @@ main section {
         transform: translate(0%, 100%) 
         
     } 
-    60% {
+    65% {
         transform: translate(0%, 100%) 
         
     } 
@@ -337,7 +342,7 @@ footer {
     min-height: 0;
     width: 100%;
     z-index: 10;
-    animation: footer-present 10s ease-in-out 0s 1 normal none;
+    animation: footer-present 12s ease-in-out 0s 1 normal none;
    
 
 }
