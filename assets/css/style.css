@@ -302,11 +302,11 @@ main section {
     border-radius: 10%;
 }
 
-#my-work-article div:first-child a img {
+/* #my-work-article div:first-child a img {
     height: 20vh;
     width: 20vh;
     
-}
+} */
 
 #contact-me address {
     width: fit-content;
